@@ -5,7 +5,7 @@ partner_blueprint = Blueprint('partner_blueprint', __name__)
 
 @partner_blueprint.route('/partners', methods=['GET'])
 def get_partners():
-    partners = list_parteners()
+    partners = list_partners()
     return jsonify([partner.to_dict() for partner in partners])
 
 @partner_blueprint.route('/partners', methods=['POST'])
