@@ -1,0 +1,14 @@
+
+__pycache__/app.cpython-311.pyc
+app/__pycache__/__init__.cpython-311.pyc
+app/controllers/__pycache__/reporte_controller.cpython-311.pyc
+app/controllers/__pycache__/usuario_controller.cpython-311.pyc
+app/models/__pycache__/reporte_cuenta.cpython-311.pyc
+app/models/__pycache__/usuario.cpython-311.pyc
+app/repositories/__pycache__/reporte_repository.cpython-311.pyc
+app/repositories/__pycache__/usuario_repository.cpython-311.pyc
+app/services/__pycache__/reporte_service.cpython-311.pyc
+app/services/__pycache__/usuario_service.cpython-311.pyc
+app/models/__pycache__/movimiento.cpython-311.pyc
+app/controllers/__pycache__/movimiento_controller.cpython-311.pyc
+app/repositories/__pycache__/movimiento_repository.cpython-311.pyc
