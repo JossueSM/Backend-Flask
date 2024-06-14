@@ -13,3 +13,4 @@ CORS(app)
 from app.controllers import reporte_controller
 from app.controllers import usuario_controller
 from app.controllers import movimiento_controller
+from app.controllers import cuenta_controller

@@ -12,3 +12,10 @@ app/services/__pycache__/usuario_service.cpython-311.pyc
 app/models/__pycache__/movimiento.cpython-311.pyc
 app/controllers/__pycache__/movimiento_controller.cpython-311.pyc
 app/repositories/__pycache__/movimiento_repository.cpython-311.pyc
+app/controllers/__pycache__/cuenta_controller.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/cuenta_service.cpython-311.pyc
+app/repositories/__pycache__/cuenta_repository.cpython-311.pyc
+app/models/__pycache__/cuenta.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
