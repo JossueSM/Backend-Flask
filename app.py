@@ -7,6 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 db = SQLAlchemy(app)
 
 app.register_blueprint(user_blueprint)
+app.register_blueprint(partner_blueprint)
 
 if __name__ == '__main__':
     db.create_all()
