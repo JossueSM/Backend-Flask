@@ -1,0 +1,33 @@
+Obtiene información de una cuenta específica por su número.
+---
+tags:
+  - Cuenta
+parameters:
+  - in: query
+    name: numero_cuenta
+    type: string
+    required: true
+    description: El número de la cuenta que se desea consultar.
+responses:
+  200:
+    description: Información de la cuenta solicitada.
+    schema:
+      type: object
+      properties:
+        numero_cuenta:
+          type: string
+          description: El número de la cuenta.
+        tipo_cuenta:
+          type: string
+          description: El tipo de cuenta (e.g., ahorros, corriente).
+        saldo_cuenta:
+          type: number
+          format: float
+          description: El saldo actual de la cuenta.
+        id_usuario:
+          type: integer
+          description: El ID del usuario asociado con la cuenta.
+  400:
+    description: Solicitud inválida, número de cuenta no proporcionado.
+  404:
+    description: Cuenta no encontrada.
