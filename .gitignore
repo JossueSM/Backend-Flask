@@ -19,3 +19,13 @@ app/services/__pycache__/cuenta_service.cpython-311.pyc
 app/repositories/__pycache__/cuenta_repository.cpython-311.pyc
 app/models/__pycache__/cuenta.cpython-311.pyc
 app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/socio_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/repositories/__pycache__/socio_repository.cpython-311.pyc
+app/models/__pycache__/socio.cpython-311.pyc
+app/controllers/__pycache__/socio_controller.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc
+app/services/__pycache__/movimiento_service.cpython-311.pyc

@@ -21,3 +21,11 @@ class UsuarioRepository:
         db.session.add(nuevo_usuario)
         db.session.commit()
         return nuevo_usuario
+    
+
+    @staticmethod
+    def actualizar_usuario(id_usuario,password_usuario):
+        actualizar_usuario = Usuario.query.get(id_usuario)
+        actualizar_usuario.password_usuario = password_usuario
+        db.session.commit()
+        return actualizar_usuario

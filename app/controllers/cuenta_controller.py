@@ -16,7 +16,7 @@ def cuentas():
     cuentas = [cuentas.as_dict() for cuentas in rows]
     return jsonify(cuentas)
 
-@app.route("/cuenta_r", methods=['POST'])
+@app.route("/cuenta", methods=['POST'])
 def cuenta_r():
     data = request.get_json()
     numero_cuenta=data.get("numero_cuenta")

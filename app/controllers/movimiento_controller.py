@@ -16,7 +16,7 @@ def movimientos():
     movimientos = [movimientos.as_dict() for movimientos in rows]
     return jsonify(movimientos)
 
-@app.route("/movimiento_r", methods=['POST'])
+@app.route("/movimiento", methods=['POST'])
 def movimiento_r():
     data = request.get_json()
     tipo_movimiento = data.get("tipo_movimiento")

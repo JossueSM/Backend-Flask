@@ -10,7 +10,7 @@ def reporte():
     reportes = [reporte.as_dict() for reporte in rows]
     return jsonify(reportes)
 
-@app.route("/reporte_r", methods=['POST'])
+@app.route("/reporte", methods=['POST'])
 def ingresar_reporte():
     data = request.get_json()
     id_usuario = data.get("id_usuario")

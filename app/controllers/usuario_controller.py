@@ -16,7 +16,7 @@ def usuarios():
     usuarios = [usuarios.as_dict() for usuarios in rows]
     return jsonify(usuarios)
 
-@app.route("/usuario_r", methods=['POST'])
+@app.route("/usuario", methods=['POST'])
 def usuario_r():
     data = request.get_json()
     id_usuario = data.get("id_usuario")
@@ -41,3 +41,34 @@ def usuario_r():
         return jsonify({
             "mensaje": "No se pudo crear el usuario"
         }), 400  # Example HTTP status code for bad request
+    
+
+
+@app.route("/usuario", methods=['PUT'])
+def usuario_a():
+    data = request.get_json()
+    id_usuario = data.get("id_usuario")
+    password_usuario = data.get("password_usuario")
+    try:
+        actualizar_usuario = UsuarioService.actualizar_usuario(id_usuario, password_usuario)
+        if actualizar_usuario:
+            return jsonify({
+                "mensaje": "Clave de Usuario actualizado exitosamente",
+                "Usuario": {
+                    "nombre_usuario": actualizar_usuario.nombre_usuario
+                }
+            })
+        else:
+            return jsonify({
+                "mensaje": "No se pudo actualizar la clave del usuario"
+        }), 400  
+
+
+    except:
+        return jsonify({
+                "mensaje": "Error en la Base de Datos"
+        }), 400 
+
+    
+
+    
